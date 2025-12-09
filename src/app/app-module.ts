@@ -3,14 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Header } from './component/header/header';
+import { Footer } from './component/footer/footer';
+import { Home } from './component/home/home';
+import { APropos } from './component/a-propos/a-propos';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    Header,
+    Footer,
+    Home,
+    APropos
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

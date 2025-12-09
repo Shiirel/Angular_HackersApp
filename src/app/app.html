@@ -182,7 +182,8 @@
   }
 </style>
 
-<main class="main">
+
+<!-- <main class="main">
   <div class="content">
     <div class="left-side">
       <svg
@@ -230,6 +231,7 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
+
       <h1>Hello, {{ title() }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
     </div>
@@ -328,7 +330,7 @@
       </div>
     </div>
   </div>
-</main>
+</main> -->
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
@@ -339,4 +341,6 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<router-outlet />
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
