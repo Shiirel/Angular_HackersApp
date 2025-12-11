@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { Home } from './component/home/home';
 import { APropos } from './component/a-propos/a-propos';
 const routes: Routes = [
-{path: '', component: Home},
-{path: '', component: APropos}
+{path: 'home', component: Home},
+{path: 'a-propos', component: APropos}
 ];
 @NgModule({
 imports: [RouterModule.forRoot(routes)],
